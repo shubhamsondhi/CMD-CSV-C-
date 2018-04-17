@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ServiceStack.Redis;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,7 @@ namespace ReadCommandLineService
 
         protected override void OnStart(string[] args)
         {
+            Index();
         }
         public void Index()
         {
